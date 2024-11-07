@@ -1,0 +1,111 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0f7fa;
+    color: #333;
+    padding: 20px;
+    min-height: 100vh;
+}
+h1 {
+    color: #00695c;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Estilos del formulario */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.2s;
+}
+form:hover {
+    transform: translateY(-5px);
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #00796b;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b0bec5;
+    border-radius: 5px;
+    background-color: #f1f8e9;
+}
+input:focus {
+    outline: none;
+    border-color: #00796b;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
+}
+
+/* Botones */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 48%;
+    transition: background-color 0.3s;
+}
+button[type="submit"] {
+    background-color: #00796b;
+}
+button[type="submit"]:hover {
+    background-color: #004d40;
+}
+button#clear {
+    background-color: #d32f2f;
+}
+button#clear:hover {
+    background-color: #b71c1c;
+}
+
+/* Estilos del gráfico y resultados */
+#myChart {
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid #80cbc4;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+#resultados {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+    color: #004d40;
+}
+#resultados h2 {
+    color: #00796b;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#resultados p {
+    margin: 8px 0;
+    font-size: 1rem;
+}

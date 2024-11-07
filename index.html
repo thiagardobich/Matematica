@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfica de Función Exponencial</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Gráfica de la Función Exponencial</h1>
+    <form id="form">
+        <div class="form-group">
+            <label for="k">Escala Vertical (k):</label>
+            <input type="number" id="k" value="" required>
+            <small>Nota: El parámetro (k) tiene que ser un número real, diferente de 0. No se pueden ingresar fracciones, pero si numeros con coma</small>
+        </div>
+        <div class="form-group">
+            <label for="a">Base (a):</label>
+            <input type="number" id="a" value="2" required>
+            <small>Nota: La base (a) debe ser mayor a 0 y diferente de 1. No se pueden ingresar fracciones, pero si numeros con coma</small>
+        </div>
+        <div class="form-group">
+            <label for="b">Movimiento Horizontal (b):</label>
+            <input type="number" id="b" value="0">
+            <small>Nota: El parámetro (b) tiene que ser un número real. No se pueden ingresar fracciones, pero si numeros con coma</small>
+        </div>
+        <div class="form-group">
+            <label for="c">Movimiento Vertical (c):</label>
+            <input type="number" id="c" value="0">
+            <small>Nota: El parámetro (c) tiene que ser un número real. No se pueden ingresar fracciones, pero si numeros con coma</small>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <button type="submit">Graficar</button>
+            <button type="button" id="clear">Borrar Gráfica</button>
+        </div>
+    </form>
+    
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+    <div id="resultados">
+        <h2>Resultados:</h2>
+        <p id="asintota">Asíntota Horizontal: </p>
+        <p id="ordenada">Ordenada al Origen: </p>
+        <p id="raiz">Raíz: </p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
